@@ -1,0 +1,30 @@
+---
+import BtnPrimary from '../components/subComponent/BtnPrimary.astro';
+import BtnSecundary from '../components/subComponent/BtnSecundary.astro';
+---
+
+<section class='md:flex md:justify-between md:items-center md:w-4/5 mt-32'>
+  <article class='md:w-3/5'>
+    <h1 class='font-bold text-6xl text-Basic-White'>
+      <span class='text-Basic-Dark-Gray'>Soy</span> Samir Gonzalez
+    </h1>
+    <p
+      class='text-pretty text-2xl text-Basic-Dark-Gray font-medium leading-7 mt-10'
+    >
+      Como <span class='text-Basic-White font-medium'
+        >Desarrollador Front-end</span
+      >, me apasiona crear interfaces de usuario hermosas y funcionales que
+      brinden una experiencia de usuario excepcional. Tengo un sólido
+      conocimiento de <span class='text-Basic-White font-medium'>HTML</span>, <span
+        class='text-Basic-White font-medium'>CSS</span
+      >, <span class='text-Basic-White font-medium'>JavaScript</span> y otras tecnologías
+      front-end, y aprendo constantemente y me mantengo al día con las últimas tendencias
+      y mejores prácticas de la industria.
+    </p>
+    <div class='flex gap-4 mt-5'>
+      <BtnPrimary body='Ver Mi Currículum' />
+      <BtnSecundary body='Contactame' />
+    </div>
+  </article>
+  <article class='md:w-2/5'></article>
+</section>

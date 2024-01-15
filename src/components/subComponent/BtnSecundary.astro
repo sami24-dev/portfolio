@@ -1,0 +1,18 @@
+---
+interface Props {
+  body: string;
+}
+const { body } = Astro.props;
+---
+
+<a
+  id='btn-secundary'
+  class='text-Basic-Dark-Gray text-lg font-medium h-15 py-4 px-8 rounded-lg'
+  href=''
+  >{body}</a
+>
+<style is:inline>
+  #btn-secundary {
+    background: #181818;
+  }
+</style>

@@ -1,0 +1,22 @@
+---
+interface Props {
+  body: string;
+}
+const { body } = Astro.props;
+---
+
+<a
+  id='btn-primary'
+  class='text-Basic-White text-lg font-medium h-15 py-4 px-8 rounded-lg'
+  href=''
+  >{body}</a
+>
+<style is:inline>
+  #btn-primary {
+    background: var(linear-gradient(180deg, #1a1a1a 0%, #131313 100%));
+    box-shadow:
+      0px 7px 4px 0px rgba(0, 0, 0, 0.15),
+      0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset,
+      0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset;
+  }
+</style>
