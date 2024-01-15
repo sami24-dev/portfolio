@@ -1,12 +1,18 @@
+---
+import Email from '../components/icons/Email.astro';
+import Github from '../components/icons/Github.astro';
+import Line from '../components/icons/Line.astro';
+import Linkedin from '../components/icons/Linkedin.astro';
+import Logo from '../components/icons/Logo.astro';
+import Sun from '../components/icons/Sun.astro';
+---
+
 <nav
   id='navbar'
   class='md:flex md:flex-shrink-0 md:items-center md:justify-between md:gap-10 w-4/5 h-15 p-4 mt-8'
 >
   <div class='md:flex md:items-center md:justify-center md:gap-10'>
-    <img
-      src='../../public/fondo-gradiente/Logo.svg'
-      alt='logo'
-    />
+    <Logo />
     <ul class='md:flex md:items-center md:justify-center md:gap-10'>
       <li>
         <a
@@ -41,46 +47,32 @@
   <ul class='md:flex md:items-center md:justify-center md:gap-6'>
     <li>
       <a
+        class='text-Basic-Light-Gray'
         href='https://www.linkedin.com/in/samirgm-front-end/'
         target='_blank'
-        ><img
-          class='text-Basic-Light-Gray'
-          src='../../public/fondo-gradiente/LinkedIn.svg'
-          alt='LinkedIn'
-        /></a
+        ><Linkedin /></a
       >
     </li>
     <li>
       <a
+        class='text-Basic-Light-Gray'
         href='https://github.com/sami24-dev'
         target='_blank'
-        ><img
-          class='text-Basic-Light-Gray'
-          src='../../public/fondo-gradiente/Github.svg'
-          alt='Github'
-        /></a
+        ><Github /></a
       >
     </li>
     <li>
-      <a href='mailto:samirgm24@gmail.com'
-        ><img
-          class='text-Basic-Light-Gray'
-          src='../../public/fondo-gradiente/Message-Fill.svg'
-          alt='Message-Fill'
-        /></a
+      <a
+        class='text-Basic-Light-Gray'
+        href='mailto:samirgm24@gmail.com'
+        ><Email /></a
       >
     </li>
-    <li>
-      <img
-        src='../../public/fondo-gradiente/Line-9.svg'
-        alt='Line'
-      />
+    <li class='text-Basic-Light-Gray'>
+      <Line />
     </li>
-    <li>
-      <img
-        src='../../public/fondo-gradiente/Sun.svg'
-        alt=''
-      />
+    <li class='text-Basic-Light-Gray'>
+      <Sun />
     </li>
   </ul>
 </nav>
